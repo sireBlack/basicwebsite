@@ -10398,8 +10398,12 @@ body {
   text-align: justify;
 }
 
+.container {
+  padding-bottom: 5%;
+}
+
 #footer {
-  margin-top: 30px;
+  margin-top: 10%;
   padding: 20px;
   color: #fff;
   background: #333;
