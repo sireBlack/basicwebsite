@@ -9,7 +9,21 @@
     </head>
     <body>
         @include('inc.navbar')
-        @yield('content')
-        @include('inc.sidebar')
+        <div class="container" style="margin-top: 3%;">
+            @if(Request::is('/'))
+            @include('inc.showcase')
+            @endif
+            <div class="row">
+                <div class="col-sm-9">
+                    @yield('content')
+                </div>
+                <div class="col-sm-3">
+                    @include('inc.sidebar')
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="text-center">
+            <p>Copyright 2017 &copy; Acme</p>
+        </footer>
     </body>
 </html>
